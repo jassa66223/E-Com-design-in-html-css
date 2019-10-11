@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css?family=News+Cycle|PT+Sans+Caption|Raleway:300,400,500,700|Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+/*          sales            */
+
+.saleWrapper{
+    display: -ms-grid;
+    display: grid;
+    
+    -ms-grid-columns: repeat( 2, 1fr );
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    text-transform: uppercase;
+    color: white;
+}
+.sale{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0 0 0 2rem;
+}
+
+
+.saleWrapper> .sale:nth-child(1){
+    background-image: url(../media/images/men_men.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+
+}
+.saleWrapper> .sale:nth-child(2){
+    background-image: url(../media/images/women.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.sale>p:nth-child(1){
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.sale>p:nth-child(2){
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 800;
+    font-size: 4em;
+    margin: 1rem 0 2rem 0;
+
+}
+
+.sale> div> button{
+    text-transform: inherit;
+    padding: 0.9rem 1.9rem;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-family: 'PT Sans Caption', sans-serif;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.sale> div> button::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -2;
+    -webkit-clip-path: circle(0% at 0% 0%);
+    clip-path: circle(0% at 0% 0%);
+    transition: 0.5s;
+}
+.sale> div> button:hover{
+    color: black;
+    font-weight: 600;
+}
+
+.sale> div> button:hover::before{
+    -webkit-clip-path: circle(150% at 0% 0%);
+    clip-path: circle(150% at 0% 0%);
+}
+
+
+/*              Brand section           */
+
+.brandWrapper{
+    display: flex;
+    flex-direction: row;
+    height: 6rem;
+    margin: 0 50px 100px 50px;
+}
+.brandContent {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.brandContent:nth-child(1){
+    background-color: #571845;
+    margin: 2px;
+    border-radius: 4px
+}
+.brandContent:nth-child(2){
+    background-color: #900C3E;
+    margin: 2px;
+
+}
+.brandContent:nth-child(3){
+    background-color: #C70039;
+    margin: 2px;
+    border-radius: 4px;
+}
+.brandLogo{
+    width: 30px;
+    height: 30px;
+    padding: 0 1.2rem 0 0;
+}
+.brandContent>p{
+    padding: 0;
+    margin: 0 0 8px 0;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.newArivalWrapper{
+    height: auto;
+    padding-bottom: 70px;
+}
+.lablee{
+    height: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 110px;    
+    text-align: center;
+    /* margin: 50px 0 0 0; */
+    padding: 120px 0 0 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+
+}
+.lablee>span:nth-child(1){
+    border: 5px solid #FF084E;
+    padding: 13px 0 13px 70px; 
+    margin-right: 30px;
+    transition: 0.4s;
+    color: white;
+    border-radius: 4px;
+    background-color: #FF084E;
+
+}
+
+
+.arrow {
+    text-align: center;
+    margin: 2.5rem 0 8rem 0;
+  }
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 1s infinite;
+  }
+
+/*                      Products                 */
+
+#p1::before{
+    background-image: url(../media/products/4.jpg);
+}
+#p2::before{
+    background-image: url(../media/products/5.jpg);
+}
+#p3::before{
+    background-image: url(../media/products/6.jpg);
+}
+#p4::before{
+    background-image: url(../media/products/4.jpg);
+}
+#p5::before{
+    background-image: url(../media/products/5.jpg);
+}
+#p6::before{
+    background-image: url(../media/products/6.jpg);
+}
+#p7::before{
+    background-image: url(../media/products/4.jpg);
+}
+#p8::before{
+    background-image: url(../media/products/5.jpg);
+}
+#p9::before{
+    background-image: url(../media/products/6.jpg);
+}
+.productSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 4rem;
+    margin: 0;
+}
+
+.productWrapper{
+    width: 25%;
+    height: auto;
+    margin: 0 25px;
+}
+
+.productImg{
+    height: 30rem;    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;  
+    background: none;
+    position: relative;
+    overflow: hidden;
+
+}
+.productImg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    border-radius: 5px;
+    transition: 0.5s;
+    z-index: -1;
+}
+.productImg:hover::before{
+    transform: scale(1.2);
+}
+.productImg>p{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    height: 110px;
+    margin: 0;
+    opacity:0;
+    transition: 0.8s;
+}
+.productImg:hover{
+    background-color: rgba(161, 161, 161, 0.2);
+
+}
+.productImg:hover>p{
+    opacity: 1;
+}
+
+.productWrapper>p:nth-child(2){
+    font-family: 'Nunito', sans-serif;
+    color: #CD9894;
+    font-size: 1.6em;
+    padding: 0.7rem 0 0 0;
+    margin: 0;
+}
+.productWrapper>p:nth-child(3){
+    font-family: 'Nunito', sans-serif;
+    color: rgb(141, 105, 102);
+    font-size: 0.8em;
+    padding: 0.7rem 0 0 0;
+    margin: 0;
+}
+.addTocart{
+    display: inline-block
+}
+.productWrapper>.addTocart{
+    margin: 2.5rem 0 0 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+.productWrapper>.addTocart>a,.productWrapper>.addTocart>span{
+    font-family: 'Nunito', sans-serif;
+    color: red;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 900;
+    text-decoration: none;
+}
+.productWrapper>.addTocart>span{
+    float: right;
+    font-size: 1em;
+    opacity: 0;
+}
+.productWrapper>.addTocart:hover>span{
+    opacity: 1;
+}
+
+/*              Background video            */
+
+#videoComercial{
+    height: auto;
+    margin-top: 200px;
+    position: relative;
+}
+#adidasContent{
+    height: 300px;
+    background-color: rgb(179, 48, 48);
+}
+#videoComercial>video{
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+#videoComercial>img{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+#adidasContent>a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -3px;
+    margin: auto;
+    cursor: pointer;
+    background: transparent;
+    height: 55px;
+    width: 180px;
+    overflow: hidden;
+    transition: 0.5s;
+
+    border: 2px solid white;
+    border-radius: 4px;
+    z-index: 1;
+}
+#adidasContent>a::before {
+    content: '';
+    position: absolute;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 17px;
+    color: white;
+    margin: auto;
+    height: 30px;
+    width: 180px;
+    top: 0;
+    bottom: 0;
+    left: 75px;
+    text-align: left;
+    right: 0;
+    z-index: -1;
+    transition: 0.5s;
+    animation: texttyping 4s ease infinite;
+}
+#adidasContent>a:hover::before{
+    
+    color: black;
+}
+#adidasContent>a:hover{
+    background-color: white;
+    color: black;
+}
+
+#adidasContent>p{
+    color: white;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 10px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+/*              Selling your stuff          */
+
+.sellOnline{
+    margin: 8rem 1rem 0 1rem;
+    background: rgb(255, 247, 247);
+    color: black;
+    padding: 2rem 0;
+    border-radius: 4px;
+    overflow: hidden;
+
+}
+.sellOnline>h1{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;    
+    
+    letter-spacing: 0.3rem;
+    font-size: 3em;
+
+}
+.sellOnline>p{
+    width: 40rem;
+    font-family: 'PT Sans Caption', sans-serif;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.07rem;
+    text-align: center;
+    margin: 1.5rem auto;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.sellOnline>div{
+    text-align: center;
+    margin-top: 2rem;
+}
+.sellOnline>div>button{
+    padding: 0.9rem 2rem;
+    border: 2.3px solid black;
+    background: transparent;
+    color: black;
+    font-family: 'PT Sans Caption', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    letter-spacing: 0.2rem;
+    font-weight: 800;
+    margin: -3px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+.sellOnline>div>button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/*              Testemonies Section     */
+
+.testemoniesSec{
+    height: auto;
+    margin: 0 1rem;
+    color: black;
+    padding-bottom: 5rem;
+
+}
+
+.testimonialWraper{
+    border-radius: 4px;
+}
+
+.testemoniesSec>h1{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 10em;
+    text-align: center;
+    width: 100%;
+    color: rgb(252, 213, 213);
+
+}
+
+
+.testimoniallist{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(231, 231, 231);
+    padding: 2rem 1rem;
+    border-radius: 4px; 
+}
+
+.testimonialWraper{
+    border-radius: 4px;
+    background-color: white;
+    margin: 0 0.5rem;
+    padding: 0.5rem 3rem;
+}
+
+.testimonialId{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 600
+}
+.testimonialId>p{
+    text-align: center;
+}
+.testimonialId>p:nth-child(2){
+    font-size: 0.6rem;
+}
+
+.testimonialContent{
+    width: 90%;
+    font-family: 'Indie Flower', cursive;
+    margin: 0 auto;
+}
+

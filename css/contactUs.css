@@ -1,0 +1,57 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align:center;
+	font-family:sans-serif;
+	background: #FFAFBD;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.contact-title{
+	margin-top:100px;
+	color:#A52A2A;
+	text-transform:uppercase;
+	transition:all 4s ease-in-out;
+}
+.contact-title h1{
+	font-size:32px;
+	line-height:10px;
+}
+form{
+	margin-top:50px;
+	transition:all 4s ease-in-out;
+}
+.form-control{
+	width: 600px;
+	background:transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color:#2F4F4F;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+input{
+	height:45px;
+}
+form .submit{
+	background: #FF5722;
+	border-color: tarnsparent;
+	color:#FFF;
+	font-size: 20px;
+	font-weight:bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top
+}
+form .submit:hover{
+	
+	background-color: red;
+	cursor:pointer;
+}
+#main h3{
+	color:#A52A2A;
+}
+#address>p{
+	font-style:bold;
+}
