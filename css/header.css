@@ -145,13 +145,14 @@ header{
 .lowerHeader>p{
     margin: 7rem 0 0 0;
     text-align: left;
+    color: white;
     /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
 
-    background: url(../media/images/textBackground.jpg) no-repeat;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+    /* background: url(../media/images/textBackground.jpg) no-repeat; */
+   /* -webkit-background-clip: text; */
+   /* -webkit-text-fill-color: transparent; */
     /* background-size: 300% 300%; */
-	animation: Gradient 20s ease infinite;
+	/* animation: Gradient 20s ease infinite; */
 
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
