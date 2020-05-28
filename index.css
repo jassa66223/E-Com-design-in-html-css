@@ -23,7 +23,7 @@
 
 
 .saleWrapper> .sale:nth-child(1){
-    background-image: url(/media/images/men_men.jpg);
+    background-image: url(./media/images/men_men.jpg);
     background-repeat: no-repeat;
     background-color: black;
     background-position: center;
@@ -31,7 +31,7 @@
 
 }
 .saleWrapper> .sale:nth-child(2){
-    background-image: url(/media/images/women.jpg);
+    background-image: url(./media/images/women.jpg);
     background-repeat: no-repeat;
     background-color: black;
     background-position: center;
@@ -172,31 +172,31 @@
 /*                      Products                 */
 
 #p1::before{
-    background-image: url(/media/products/4.jpg);
+    background-image: url(./media/products/4.jpg);
 }
 #p2::before{
-    background-image: url(/media/products/5.jpg);
+    background-image: url(./media/products/5.jpg);
 }
 #p3::before{
-    background-image: url(/media/products/6.jpg);
+    background-image: url(./media/products/6.jpg);
 }
 #p4::before{
-    background-image: url(/media/products/4.jpg);
+    background-image: url(./media/products/4.jpg);
 }
 #p5::before{
-    background-image: url(/media/products/5.jpg);
+    background-image: url(./media/products/5.jpg);
 }
 #p6::before{
-    background-image: url(/media/products/6.jpg);
+    background-image: url(./media/products/6.jpg);
 }
 #p7::before{
-    background-image: url(/media/products/4.jpg);
+    background-image: url(./media/products/4.jpg);
 }
 #p8::before{
-    background-image: url(/media/products/5.jpg);
+    background-image: url(./media/products/5.jpg);
 }
 #p9::before{
-    background-image: url(/media/products/6.jpg);
+    background-image: url(./media/products/6.jpg);
 }
 .productSection{
     display: flex;
